@@ -45,7 +45,7 @@ Focusing on what's cooler, what this means is that, if you open your web browser
 
 What this means is that you can potentially put this script anywhere, not just on your own machine, to let many more employees use what you just made. In the end, the more people who use something you made, the more special it should make you feel.
 
-This what many developers consider their real calling, underneath all the stereotypical things.
+This what many developers consider their real calling, helping others, underneath all the stereotypical things.
 
 ## So how do I get this thing to do what I want..
 
@@ -83,7 +83,7 @@ Object.keys(req.query || {}).forEach(key => {
 });
 ```
 
-If you are new to code, don't worry, you can some the same problem in a hundred different ways, and reading other people's code can, at first, be difficult because you are different people. The industry may help to give standards, but even those standards change over time.
+If you are new to code, don't worry, you can solve the same problem in a hundred different ways, and reading other people's code can, at first, be difficult because you are different people. The industry may help to give standards, but even those standards change over time.
 
 Feel free to look up all the functions used online before you continue. If you want the work done by end of business, let's continue!
 
@@ -100,7 +100,7 @@ texts: {
 
 Learning to inspect the code while its running (debugging) can help you gain real insight on what is going on in your code. **Using VS Code, In the text/code text area, Try clicking the empty space to the left of the line number**. This will add a red circle that the code will stop on if the execution reaches it. When the execution is paused, you can hover variables like `texts` to see what they contain, as well as to type things in `Debug Console` at the bottom pane to execute javascript in real-time. Pretty cool, and an invaluable tool to any developer.
 
-Now, onto the code that will put our texts on the PDF.
+Now, on to the code that will put our texts on the PDF.
 ```
 // Go over each text field name (like date)
 Object.keys(texts).forEach(fieldName => {
