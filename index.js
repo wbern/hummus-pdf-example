@@ -5,7 +5,7 @@ const path = require("path");
 const process = require("process");
 const app = express();
 
-const fieldTypes = {
+const fields = {
     choiceRiksdagen: { x: 83, y: 256 },
     choiceLandsting: { x: 83, y: 279 },
     choiceLandstingText: { x: 235, y: 279 - 3 },
@@ -19,11 +19,17 @@ const fieldTypes = {
 
 const multiplierOffset = 45.6;
 
+app.get("/hello", function(req, res) {
+    res.send("Hi there!");
+})
+
 app.get("/generate", function(req, res) {
     const id = Math.random()
         .toString(36)
         .substr(2, 9);
-    const outputFilePath = path.resolve("download/" + id + ".pdf");
+
+    const outputFileName = id + ".pdf";
+    const outputFilePath = path.resolve("download/", outputFileName);
     const downloadedFileName = "generated.pdf";
     const pdfDoc = new HummusRecipe("input.pdf", outputFilePath);
 
@@ -34,7 +40,7 @@ app.get("/generate", function(req, res) {
     };
 
     Object.keys(req.query || {}).forEach(key => {
-        if (fieldTypes[key]) {
+        if (fields[key]) {
             texts[key] = req.query[key].split(",");
         }
     });
@@ -57,8 +63,8 @@ app.get("/generate", function(req, res) {
             texts[fieldName].forEach((rowValue, index) => {
                 pdfDoc.text(
                     rowValue,
-                    fieldTypes[fieldName].x,
-                    fieldTypes[fieldName].y + index * multiplierOffset,
+                    fields[fieldName].x,
+                    fields[fieldName].y + index * multiplierOffset,
                     fontSettings
                 );
             });
@@ -68,8 +74,12 @@ app.get("/generate", function(req, res) {
 
     pdfDoc.endPDF();
 
-    res.download(outputFilePath, downloadedFileName);
+    res.download(outputFilePath, outputFileName);
 });
+
+app.get("*", function(req, res) {
+    res.send("Nothing to see here");
+})
 
 const decidedPort = process.env.PORT || 8080;
 app.listen(decidedPort, () => console.log(`running: port ${decidedPort}!`));
