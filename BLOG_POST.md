@@ -15,7 +15,7 @@ What you need:
 * A way to actually run the code: NodeJS (Latest or LTS)
 
 Here are the steps.
-1. Open a so-callled git bash console (just open the windows start menu and type `git bash`, it should be there).
+1. Open a so-called git bash console (just open the windows start menu and type `git bash`, it should be there).
 2. Type `git clone https://github.com/wbern/hummus-pdf-example.git` to get my example repository, it will be named `hummus-pdf-example` by default. Humm
 
 *For those who want to know, we are using an enhanced shell bundled with `git`, a great way to share code and my way to share my code with you. You can later use git to manage your own projects, but that's for a future blog post.*
