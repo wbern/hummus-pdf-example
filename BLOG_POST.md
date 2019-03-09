@@ -43,16 +43,18 @@ You never quite know what you get when downloading other people's code without l
 
 Focusing on what's cooler, what this means is that, if you open your web browser while it's running, you can type in `http://localhost:8080` to access it on your own machine (localhost = you), and specifically `http://localhost:8080/hello` to use the little command I added for you. (If localhost doesn't work, you could also try `http://127.0.0.1/`)
 
-What this means is that you can potentially put this script anywhere, not just on your own machine, to let many more employees use what you just made. In the end, the more people who use something the more special it should make you feel as the guy who created it. This what many developers consider their real calling, underneath all the stereotypical things.
+What this means is that you can potentially put this script anywhere, not just on your own machine, to let many more employees use what you just made. In the end, the more people who use something you made, the more special it should make you feel.
+
+This what many developers consider their real calling, underneath all the stereotypical things.
 
 ## So how do I get this thing to do what I want..
 
 # Code phase
 
 ## I want to put some text on a PDF, please send help.
-We're using a package called `hummus-recipe` that helps us read and modify PDF files. In order to actually fill in anything, we need to open the PDF, write some text at some specific coordinates, and close the PDF.
+We're using a package called `hummus-recipe` (github repo: https://github.com/chunyenHuang/hummusRecipe) that helps us read and modify PDF files. In order to actually fill in anything, we need to open the PDF, write some text at some specific coordinates, and close the PDF.
 
-Because programmers want structure and order, I have created an object that holds the coordinates to each field I want to fill in, on line 8.
+Because programmers want structure and order, I have created an object that holds the coordinates to each field I want to fill in on the single-page document in this demonstration, on line 8 in the code. (hint: press `CTRL + G` to open a "goto line" feature in VS Code)
 
 ```
 const fields = {
@@ -96,7 +98,7 @@ texts: {
 }
 ```
 
-If you learn to ispect the code while its running (debugging), it can help you gain real insight on what is going on in your code. Using VS Code, In the text/code text area, Try clicking the empty space to the left of the line number. This will add a red circle that the code will stop on if the execution reaches it. When the execution is paused, you can hover variables like `texts` to see what they contain, as well as to type things in `Debug Console` at the bottom pane to execute javascript in real-time. Pretty cool, and an invaluable tool to any developer.
+Learning to inspect the code while its running (debugging) can help you gain real insight on what is going on in your code. **Using VS Code, In the text/code text area, Try clicking the empty space to the left of the line number**. This will add a red circle that the code will stop on if the execution reaches it. When the execution is paused, you can hover variables like `texts` to see what they contain, as well as to type things in `Debug Console` at the bottom pane to execute javascript in real-time. Pretty cool, and an invaluable tool to any developer.
 
 Now, onto the code that will put our texts on the PDF.
 ```
@@ -123,7 +125,7 @@ After that code has executed, you will be getting a pdf downloaded, and as a bon
 ## I understood roughly 10% of that
 Ok, understood! Here's my suggestion, tinker with as much of the code as you can. Next, I will show you how to fit this to your use-case. Often times you don't need to understand it all to make it work for you.
 
-# Hack it!
+# Time to hack it!
 Obviously you don't want to fill in this form but something else.
 
 You can do this by putting in coordinates into the following code:
@@ -150,9 +152,11 @@ Hopefully you got something that you can tinker with as a side-project. Or you a
 If you want to get into web development and create visual components, I suggest writing some form controls to let you create PDF's more easily, which I found to be slightly out of scope for this small topic.
 
 ## Bonus! Hosting the server with heroku for free
-If your documents aren't too important, you might want to consider a really simple hosting service for this neat solution.
+If your documents aren't too important, you might want to consider a really simple hosting service for this neat solution. That way, other people can more easily use your custom tailored solution.
 
 1. Go to https://www.heroku.com/ and sign up.
 2. Connect heroku to your code somehow (they help you out a lot, I used GitHub for integration, so if you "Fork" my GitHub repo with a GitHub account, you can do the same thing as I did.)
 3. Access your web server. For example, mine can be accessed from `https://partibeteckning-underskrifter.herokuapp.com/`
 4. Now anytime you push your code, your changes can be provided automatically to your new and awesome web service.
+
+Thanks for reading!
