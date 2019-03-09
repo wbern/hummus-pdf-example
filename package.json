@@ -1,0 +1,15 @@
+{
+  "name": "hummus-pdf-example",
+  "version": "1.0.0",
+  "description": "Simple example to generate PDF's through a simple web server",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./index.js"
+  },
+  "author": "https://github.com/wbern",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.4",
+    "hummus-recipe": "^1.8.2"
+  }
+}
