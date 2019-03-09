@@ -1,7 +1,7 @@
 ## Programmatically filling in PDF documents that nobody wants to do by hand
 Developers, like us at KITS and many others around the world, like to picture themselves working on large scale solutions, solving great engineering challenges that in the end will save the day. Then comes the day where you are asked "can you make us able to export this data, and do it onto a PDF document?".
 
-Truth this, from a business perspective, large systems tend to be amazing at giving you convoluted solutions to solve more than one problem, and if you're unlucky, they solve each problem half-decently at best. Sometimes the small hacks are simply the best productivity boosters, and that's why employees with some scripting knowledge can gain reach amazing productivity compared to their peers.
+Truth this, from a business perspective, large systems tend to be amazing at giving you convoluted solutions to solve more than one problem, and if you're unlucky, they solve each problem half-decently at best. Sometimes the small hacks are simply the best productivity boosters, and that's why employees with some scripting knowledge can reach amazing productivity compared to their peers.
 
 Today I'm going to show a quick and simple way to get this type of work done, and I'm going to start off by giving you my complete solution, because you want the solution and I respect that completely.
 
