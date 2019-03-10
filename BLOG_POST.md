@@ -18,6 +18,8 @@ Here are the steps.
 1. Open a so-called git bash console (just open the windows start menu and type `git bash`, it should be there).
 2. Type `git clone https://github.com/wbern/hummus-pdf-example.git` to get my example repository, it will be named `hummus-pdf-example` by default. Humm
 
+![Git Clone GIF](https://github.com/wbern/hummus-pdf-example/raw/master/blog_assets/blog_git_clone.gif "Git Clone GIF")
+
 *For those who want to know, we are using an enhanced shell bundled with `git`, a great way to share code and my way to share my code with you. You can later use git to manage your own projects, but that's for a future blog post.*
 
 3. Now, open VS Code, and go File > Open Folder and select the directory (`hummus-pdf-example`). You can also right-click the folder in the File Explorer and choose "Open with Code".
@@ -42,6 +44,8 @@ Simply enough, in the same way that NodeJS lets us take care of executing javasc
 You never quite know what you get when downloading other people's code without looking. :-) Don't worry, this is not malicious, and nobody is going to be able to do anything harmful with your little web server.
 
 Focusing on what's cooler, what this means is that, if you open your web browser while it's running, you can type in `http://localhost:8080` to access it on your own machine (localhost = you), and specifically `http://localhost:8080/hello` to use the little command I added for you. (If localhost doesn't work, you could also try `http://127.0.0.1/`)
+
+![Git Hello GIF](https://github.com/wbern/hummus-pdf-example/raw/master/blog_assets/blog_hello.gif "Git Hello GIF")
 
 What this means is that you can potentially put this script anywhere, not just on your own machine, to let many more employees use what you just made. In the end, the more people who use something you made, the more special it should make you feel.
 
@@ -99,6 +103,8 @@ texts: {
 ```
 
 Learning to inspect the code while its running (debugging) can help you gain real insight on what is going on in your code. **Using VS Code, In the text/code text area, Try clicking the empty space to the left of the line number**. This will add a red circle that the code will stop on if the execution reaches it. When the execution is paused, you can hover variables like `texts` to see what they contain, as well as to type things in `Debug Console` at the bottom pane to execute javascript in real-time. Pretty cool, and an invaluable tool to any developer.
+
+![Git Debugging GIF](https://github.com/wbern/hummus-pdf-example/raw/master/blog_assets/blog_breakpoints.gif "Git Debugging GIF")
 
 Now, on to the code that will put our texts on the PDF.
 ```
