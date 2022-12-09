@@ -9,7 +9,7 @@
   "author": "https://github.com/wbern",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.16.4",
+    "express": "^4.17.3",
     "hummus-recipe": "^1.8.2"
   }
 }
